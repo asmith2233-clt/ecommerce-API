@@ -36,9 +36,9 @@ JDBC / DAO Pattern
 
 Apache DBCP2
 
-Postman (API Testing)
+Insonmnia
 
-HTML/CSS Front-End (provided UI)
+
 
 🔐 Authentication & Authorization
 
