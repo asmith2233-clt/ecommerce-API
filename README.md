@@ -86,8 +86,6 @@ POST	/products	Admin	Create product
 PUT	/products/{id}	Admin	Update product
 DELETE	/products/{id}	Admin	Delete product
 Product Search Filters
-<img width="1120" height="379" alt="Screenshot 2025-12-18 231747" src="https://github.com/user-attachments/assets/d33c399a-dc97-4362-b585-120d96438d01" />
-
 
 Category ID
 
@@ -134,7 +132,9 @@ products
 
 shopping_cart
 
-orders / order_line_items (future expansion)
+orders / order_line_items (future expansion) 
+<img width="1741" height="919" alt="image" src="https://github.com/user-attachments/assets/5ff10245-80fe-4aba-8bbe-ba1505945f0f" />
+
 
 ✔ Uses auto-increment IDs
 ✔ Foreign key relationships enforced
