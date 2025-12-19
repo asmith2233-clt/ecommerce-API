@@ -38,11 +38,11 @@ public class ProductsController
         }
         catch(Exception ex)
         {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "something wrong with search method products controller");
         }
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     @PreAuthorize("permitAll()")
     public Product getById(@PathVariable int id )
     {
@@ -57,7 +57,7 @@ public class ProductsController
         }
         catch(Exception ex)
         {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "something wrong with getById method products controller");
         }
     }
 
@@ -71,7 +71,7 @@ public class ProductsController
         }
         catch(Exception ex)
         {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "something wrong with addProduct method products controller");
         }
     }
 
@@ -81,11 +81,11 @@ public class ProductsController
     {
         try
         {
-            productDao.create(product);
+            productDao.update(id, product);
         }
         catch(Exception ex)
         {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "something wrong with updateProduct method products controller");
         }
     }
 
@@ -104,7 +104,7 @@ public class ProductsController
         }
         catch(Exception ex)
         {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "something wrong with deleteProduct method products controller");
         }
     }
 }
